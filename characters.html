@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Characters - Bible Stories 4 Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="characters.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bible Stories 4 Kids</h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html" class="active">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h2>Meet Amazing Bible Characters!</h2>
+    <p>Learn about the brave heroes and faithful followers of God</p>
+  </section>
+
+  <section class="characters-container">
+    
+    <!-- Search bar -->
+    <div class="search-section">
+      <input type="text" id="search-input" placeholder="🔍 Search for a character...">
+    </div>
+
+    <!-- Filter buttons -->
+    <div class="filter-section">
+      <h3>Filter by Type:</h3>
+      <button class="filter-btn active" data-type="all">All Characters</button>
+      <button class="filter-btn" data-type="prophet">Prophets</button>
+      <button class="filter-btn" data-type="king">Kings</button>
+      <button class="filter-btn" data-type="disciple">Disciples</button>
+      <button class="filter-btn" data-type="hero">Heroes</button>
+    </div>
+
+    <!-- Characters grid -->
+    <div class="characters-grid">
+
+      <div class="character-card" data-type="hero">
+        <div class="character-image">
+          <img src="media/noah.jpg" alt="Noah">
+        </div>
+        <div class="character-content">
+          <h3>Noah</h3>
+          <span class="character-badge hero">Hero of Faith</span>
+          <p class="character-description">Built the ark and saved his family and all the animals from the great flood.</p>
+          <div class="character-traits">
+            <span class="trait">✨ Obedient</span>
+            <span class="trait">💪 Patient</span>
+            <span class="trait">❤️ Faithful</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="hero king">
+        <div class="character-image">
+          <img src="media/david.jpg" alt="David">
+        </div>
+        <div class="character-content">
+          <h3>David</h3>
+          <span class="character-badge king">King & Warrior</span>
+          <p class="character-description">A shepherd boy who became king and defeated the giant Goliath with God's help.</p>
+          <div class="character-traits">
+            <span class="trait">🎵 Worshipper</span>
+            <span class="trait">⚔️ Brave</span>
+            <span class="trait">👑 Leader</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="prophet">
+        <div class="character-image">
+          <img src="media/moses.jpg" alt="Moses">
+        </div>
+        <div class="character-content">
+          <h3>Moses</h3>
+          <span class="character-badge prophet">Prophet & Leader</span>
+          <p class="character-description">Led God's people out of Egypt and received the Ten Commandments on Mount Sinai.</p>
+          <div class="character-traits">
+            <span class="trait">📜 Lawgiver</span>
+            <span class="trait">🌊 Miracle Worker</span>
+            <span class="trait">🙏 Humble</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="prophet">
+        <div class="character-image">
+          <img src="media/jonah.jpg" alt="Jonah">
+        </div>
+        <div class="character-content">
+          <h3>Jonah</h3>
+          <span class="character-badge prophet">Reluctant Prophet</span>
+          <p class="character-description">Swallowed by a great fish after running from God, then preached to Nineveh.</p>
+          <div class="character-traits">
+            <span class="trait">🐋 Adventurer</span>
+            <span class="trait">🔄 Changed</span>
+            <span class="trait">📢 Preacher</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="prophet">
+        <div class="character-image">
+          <img src="media/daniel.jpg" alt="Daniel">
+        </div>
+        <div class="character-content">
+          <h3>Daniel</h3>
+          <span class="character-badge prophet">Prophet & Dreamer</span>
+          <p class="character-description">Survived the lions' den and interpreted dreams with God's wisdom.</p>
+          <div class="character-traits">
+            <span class="trait">🦁 Fearless</span>
+            <span class="trait">💭 Wise</span>
+            <span class="trait">🙏 Prayerful</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="hero">
+        <div class="character-image">
+          <img src="media/esther.jpg" alt="Esther">
+        </div>
+        <div class="character-content">
+          <h3>Esther</h3>
+          <span class="character-badge hero">Queen & Savior</span>
+          <p class="character-description">A brave queen who saved her people from destruction with courage and faith.</p>
+          <div class="character-traits">
+            <span class="trait">👸 Courageous</span>
+            <span class="trait">🌟 Beautiful</span>
+            <span class="trait">🛡️ Protector</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="disciple">
+        <div class="character-image">
+          <img src="media/peter.jpg" alt="Peter">
+        </div>
+        <div class="character-content">
+          <h3>Peter</h3>
+          <span class="character-badge disciple">Disciple & Rock</span>
+          <p class="character-description">A fisherman who became Jesus' close friend and a leader of the early church.</p>
+          <div class="character-traits">
+            <span class="trait">🎣 Fisherman</span>
+            <span class="trait">⚡ Bold</span>
+            <span class="trait">💖 Devoted</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="disciple">
+        <div class="character-image">
+          <img src="media/john.jpg" alt="John">
+        </div>
+        <div class="character-content">
+          <h3>John</h3>
+          <span class="character-badge disciple">Beloved Disciple</span>
+          <p class="character-description">Jesus' beloved disciple who wrote about God's love in the Gospel of John.</p>
+          <div class="character-traits">
+            <span class="trait">❤️ Loving</span>
+            <span class="trait">✍️ Writer</span>
+            <span class="trait">👁️ Witness</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="hero">
+        <div class="character-image">
+          <img src="media/ruth.jpg" alt="Ruth">
+        </div>
+        <div class="character-content">
+          <h3>Ruth</h3>
+          <span class="character-badge hero">Faithful Follower</span>
+          <p class="character-description">Showed amazing loyalty and love to her mother-in-law Naomi and God.</p>
+          <div class="character-traits">
+            <span class="trait">💝 Loyal</span>
+            <span class="trait">🌾 Hard-working</span>
+            <span class="trait">🙌 Kind</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="hero">
+        <div class="character-image">
+          <img src="media/samson.jpg" alt="Samson">
+        </div>
+        <div class="character-content">
+          <h3>Samson</h3>
+          <span class="character-badge hero">Mighty Judge</span>
+          <p class="character-description">A judge of Israel with incredible strength given by God to defeat enemies.</p>
+          <div class="character-traits">
+            <span class="trait">💪 Strong</span>
+            <span class="trait">⚔️ Warrior</span>
+            <span class="trait">🦁 Powerful</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="king">
+        <div class="character-image">
+          <img src="media/king-solomon.jpg" alt="Solomon">
+        </div>
+        <div class="character-content">
+          <h3>Solomon</h3>
+          <span class="character-badge king">Wise King</span>
+          <p class="character-description">The wisest king who built God's temple and asked for wisdom instead of riches.</p>
+          <div class="character-traits">
+            <span class="trait">🧠 Wisest</span>
+            <span class="trait">🏛️ Builder</span>
+            <span class="trait">⚖️ Just</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="character-card" data-type="hero">
+        <div class="character-image">
+          <img src="media/mary-mother.jpg" alt="Mary">
+        </div>
+        <div class="character-content">
+          <h3>Mary</h3>
+          <span class="character-badge hero">Mother of Jesus</span>
+          <p class="character-description">Chosen by God to be the mother of Jesus, showing faith and obedience.</p>
+          <div class="character-traits">
+            <span class="trait">🌟 Chosen</span>
+            <span class="trait">😇 Pure</span>
+            <span class="trait">🙏 Faithful</span>
+          </div>
+          <button class="learn-more-btn">Learn More</button>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- No results message -->
+    <div id="no-results" class="no-results hidden">
+      <p>😢 No characters found. Try a different search!</p>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bible Stories 4 Kids — Bringing Bible Adventures to Life!
+      <nav class="footer-nav">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+
+        <div class="social-media-icons">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  </footer>
+
+  <script src="characters.js"></script>
+  
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

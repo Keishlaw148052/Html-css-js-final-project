@@ -1,0 +1,470 @@
+/* Bible Characters Page Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFF8E8;
+  color: #2E2E2E;
+}
+
+/* Header */
+header {
+  background: #4ABFF2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  color: white;
+  font-size: 32px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD93D;
+}
+
+nav a.active {
+  color: #FFD93D;
+  border-bottom: 2px solid #FFD93D;
+  padding-bottom: 2px;
+}
+
+/* Page Hero */
+.page-hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #FF74B1, #FFD93D);
+  color: white;
+}
+
+.page-hero h2 {
+  font-family: 'Fredoka One';
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  font-size: 20px;
+}
+
+/* Characters Container */
+.characters-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#search-input {
+  width: 100%;
+  max-width: 500px;
+  padding: 15px 20px;
+  font-size: 18px;
+  border: 3px solid #4ABFF2;
+  border-radius: 30px;
+  outline: none;
+  transition: all 0.3s ease;
+  font-family: 'Poppins', sans-serif;
+}
+
+#search-input:focus {
+  border-color: #FF74B1;
+  box-shadow: 0 0 15px rgba(255, 116, 177, 0.3);
+}
+
+/* Filter Section */
+.filter-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-section h3 {
+  font-family: 'Fredoka One';
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #FF74B1;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  margin: 5px;
+  background: white;
+  color: #FF74B1;
+  border: 2px solid #FF74B1;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #FF74B1;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.filter-btn.active {
+  background: #FF74B1;
+  color: white;
+}
+
+/* Characters Grid */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+/* Character Cards */
+.character-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.character-card.hidden {
+  display: none;
+}
+
+/* Character Image */
+.character-image {
+  position: relative;
+  width: 100%;
+  padding-top: 75%;
+  overflow: hidden;
+}
+
+.character-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-initial {
+  font-family: 'Fredoka One';
+  font-size: 120px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+/* Character Content */
+.character-content {
+  padding: 20px;
+}
+
+.character-content h3 {
+  font-family: 'Fredoka One';
+  font-size: 26px;
+  margin-bottom: 8px;
+  color: #2E2E2E;
+}
+
+/* Character Badges */
+.character-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  border-radius: 15px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.character-badge.hero {
+  background: #FFD93D;
+  color: #2E2E2E;
+}
+
+.character-badge.prophet {
+  background: #7ED957;
+  color: white;
+}
+
+.character-badge.king {
+  background: #9370DB;
+  color: white;
+}
+
+.character-badge.disciple {
+  background: #4ABFF2;
+  color: white;
+}
+
+/* Character Description */
+.character-description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+  min-height: 60px;
+}
+
+/* Character Traits */
+.character-traits {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.trait {
+  background: #F0F0F0;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  color: #555;
+}
+
+/* Learn More Button */
+.learn-more-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #4ABFF2, #7ED957);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+}
+
+.learn-more-btn:hover {
+  background: linear-gradient(135deg, #7ED957, #4ABFF2);
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.learn-more-btn:active {
+  transform: scale(0.98);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  font-size: 24px;
+  color: #999;
+  animation: fadeIn 0.5s ease;
+}
+
+.no-results.hidden {
+  display: none;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #7ED957;
+  margin-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+footer nav a {
+  margin: 10px 10px;
+  color: rgb(31, 139, 76);
+  text-decoration: underline;
+}
+
+.social-media-icons {
+  font-size: 24px;
+}
+
+.social-media-icons #facebook {
+  color: #1a3a80;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #facebook:hover {
+  color: #2d4373;
+}
+
+.social-media-icons #instagram {
+  color: #E1306C;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #instagram:hover {
+  color: #C13584;
+}
+
+.social-media-icons #youtube {
+  color: #FF0000;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #youtube:hover {
+  color: #CC0000;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: #4ABFF2;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav a {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .page-hero h2 {
+    font-size: 32px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .characters-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .filter-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  .character-initial {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .characters-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .page-hero h2 {
+    font-size: 28px;
+  }
+
+  #search-input {
+    font-size: 16px;
+  }
+}

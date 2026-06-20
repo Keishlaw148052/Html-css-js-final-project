@@ -1,0 +1,336 @@
+/* Bible Stories Page Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #FFF8E8;
+  color: #2E2E2E;
+}
+
+/* Header */
+header {
+  background: #4ABFF2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  position: relative;
+}
+
+header h1 {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  color: white;
+  font-size: 32px;
+}
+
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+nav a {
+  margin: 0 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #FFD93D;
+}
+
+nav a.active {
+  color: #FFD93D;
+  border-bottom: 2px solid #FFD93D;
+  padding-bottom: 2px;
+}
+
+/* Page Hero */
+.page-hero {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(135deg, #4ABFF2, #7ED957);
+  color: white;
+}
+
+.page-hero h2 {
+  font-family: 'Fredoka One';
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+.page-hero p {
+  font-size: 20px;
+}
+
+/* Stories Container */
+.stories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+/* Filter Section */
+.filter-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter-section h3 {
+  font-family: 'Fredoka One';
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #4ABFF2;
+}
+
+.filter-btn {
+  padding: 12px 24px;
+  margin: 5px;
+  background: white;
+  color: #4ABFF2;
+  border: 2px solid #4ABFF2;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover {
+  background: #4ABFF2;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.filter-btn.active {
+  background: #4ABFF2;
+  color: white;
+}
+
+/* Stories Grid */
+.stories-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+/* Story Cards */
+.story-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  animation: fadeIn 0.5s ease;
+}
+
+.story-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.2);
+}
+
+.story-card.hidden {
+  display: none;
+}
+
+.story-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+  background: #f5f5f5;
+}
+
+.story-content {
+  padding: 20px;
+}
+
+.story-content h3 {
+  font-family: 'Fredoka One';
+  font-size: 22px;
+  margin-bottom: 10px;
+  color: #FF74B1;
+}
+
+.story-content p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.read-btn {
+  width: 100%;
+  padding: 12px;
+  background: #FFD93D;
+  color: #2E2E2E;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.read-btn:hover {
+  background: #FFC700;
+  transform: scale(1.05);
+}
+
+.read-btn:active {
+  transform: scale(0.98);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #7ED957;
+  margin-top: 40px;
+  color: white;
+  font-weight: 600;
+}
+
+footer nav a {
+  margin: 10px 10px;
+  color: rgb(31, 139, 76);
+  text-decoration: underline;
+}
+
+.social-media-icons {
+  font-size: 24px;
+}
+
+.social-media-icons #facebook {
+  color: #1a3a80;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #facebook:hover {
+  color: #2d4373;
+}
+
+.social-media-icons #instagram {
+  color: #E1306C;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #instagram:hover {
+  color: #C13584;
+}
+
+.social-media-icons #youtube {
+  color: #FF0000;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.social-media-icons #youtube:hover {
+  color: #CC0000;
+}
+
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 250px;
+    height: 100vh;
+    background: #4ABFF2;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.1);
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav a {
+    margin: 15px 0;
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .page-hero h2 {
+    font-size: 32px;
+  }
+
+  .page-hero p {
+    font-size: 16px;
+  }
+
+  .stories-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .filter-btn {
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  .stories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
+
+  .page-hero h2 {
+    font-size: 28px;
+  }
+}

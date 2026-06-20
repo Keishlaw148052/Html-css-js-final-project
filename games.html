@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Games - Bible Stories 4 Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="games.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bible Stories 4 Kids</h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html" class="active">Games</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h2>Fun Bible Games!</h2>
+    <p>Learn and play with exciting Bible-themed activities</p>
+  </section>
+
+  <section class="games-container">
+    
+    <!-- Game Selection Menu -->
+    <div class="game-menu">
+      <button class="game-menu-btn active" data-game="guess">🎯 Guess the Character</button>
+      <button class="game-menu-btn" data-game="puzzle">🧩 Bible Puzzle</button>
+      <button class="game-menu-btn" data-game="quiz">📝 Bible Quiz</button>
+    </div>
+
+    <!-- Game 1: Guess the Character -->
+    <div id="guess-game" class="game-section active">
+      <div class="game-header">
+        <h2>🎯 Guess the Bible Character</h2>
+        <p>Read the clues and guess who it is!</p>
+      </div>
+
+      <div class="game-content">
+        <div class="clue-box">
+          <h3>Clue:</h3>
+          <p id="clue-text">Click "New Character" to start!</p>
+        </div>
+
+        <div class="score-board">
+          <div class="score-item">
+            <span class="score-label">Score:</span>
+            <span id="guess-score" class="score-value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Streak:</span>
+            <span id="guess-streak" class="score-value">0</span>
+          </div>
+        </div>
+
+        <div class="answer-options">
+          <button class="answer-btn" data-answer="0">Option 1</button>
+          <button class="answer-btn" data-answer="1">Option 2</button>
+          <button class="answer-btn" data-answer="2">Option 3</button>
+          <button class="answer-btn" data-answer="3">Option 4</button>
+        </div>
+
+        <div class="game-controls">
+          <button id="new-character-btn" class="control-btn">New Character</button>
+          <button id="hint-btn" class="control-btn hint-btn">💡 Get Hint</button>
+        </div>
+
+        <div id="guess-feedback" class="feedback hidden"></div>
+      </div>
+    </div>
+
+    <!-- Game 2: Bible Puzzle -->
+    <div id="puzzle-game" class="game-section">
+      <div class="game-header">
+        <h2>🧩 Bible Word Puzzle</h2>
+        <p>Unscramble the letters to find the Bible word!</p>
+      </div>
+
+      <div class="game-content">
+        <div class="puzzle-display">
+          <h3>Scrambled Word:</h3>
+          <div id="scrambled-word" class="scrambled-letters">?????</div>
+          <div class="puzzle-hint">
+            <p><strong>Hint:</strong> <span id="puzzle-hint-text">Click "New Puzzle" to start!</span></p>
+          </div>
+        </div>
+
+        <div class="score-board">
+          <div class="score-item">
+            <span class="score-label">Solved:</span>
+            <span id="puzzle-score" class="score-value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Time:</span>
+            <span id="puzzle-timer" class="score-value">0s</span>
+          </div>
+        </div>
+
+        <div class="puzzle-input-area">
+          <input type="text" id="puzzle-answer" placeholder="Type your answer here..." maxlength="20">
+          <button id="check-puzzle-btn" class="control-btn">Check Answer</button>
+        </div>
+
+        <div class="game-controls">
+          <button id="new-puzzle-btn" class="control-btn">New Puzzle</button>
+          <button id="reveal-puzzle-btn" class="control-btn hint-btn">👀 Reveal Answer</button>
+        </div>
+
+        <div id="puzzle-feedback" class="feedback hidden"></div>
+      </div>
+    </div>
+
+    <!-- Game 3: Bible Quiz -->
+    <div id="quiz-game" class="game-section">
+      <div class="game-header">
+        <h2>📝 Bible Knowledge Quiz</h2>
+        <p>Test your knowledge of Bible stories!</p>
+      </div>
+
+      <div class="game-content">
+        <div class="quiz-progress">
+          <p>Question <span id="current-question">1</span> of <span id="total-questions">10</span></p>
+          <div class="progress-bar">
+            <div id="progress-fill" class="progress-fill"></div>
+          </div>
+        </div>
+
+        <div class="quiz-question-box">
+          <h3 id="quiz-question">Click "Start Quiz" to begin!</h3>
+        </div>
+
+        <div class="quiz-options">
+          <button class="quiz-option-btn" data-option="0">Option A</button>
+          <button class="quiz-option-btn" data-option="1">Option B</button>
+          <button class="quiz-option-btn" data-option="2">Option C</button>
+          <button class="quiz-option-btn" data-option="3">Option D</button>
+        </div>
+
+        <div class="score-board">
+          <div class="score-item">
+            <span class="score-label">Correct:</span>
+            <span id="quiz-correct" class="score-value">0</span>
+          </div>
+          <div class="score-item">
+            <span class="score-label">Wrong:</span>
+            <span id="quiz-wrong" class="score-value">0</span>
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <button id="start-quiz-btn" class="control-btn">Start Quiz</button>
+          <button id="next-question-btn" class="control-btn hidden">Next Question</button>
+        </div>
+
+        <div id="quiz-feedback" class="feedback hidden"></div>
+        
+        <div id="quiz-results" class="quiz-results hidden">
+          <h3>🎉 Quiz Complete!</h3>
+          <p class="final-score">You scored: <span id="final-score">0</span>/10</p>
+          <p id="result-message"></p>
+          <button id="restart-quiz-btn" class="control-btn">Try Again</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bible Stories 4 Kids — Bringing Bible Adventures to Life!
+      <nav class="footer-nav">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+
+        <div class="social-media-icons">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  </footer>
+
+  <script src="games.js"></script>
+  
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

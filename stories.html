@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Stories - Bible Stories 4 Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stories.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bible Stories 4 Kids</h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html" class="active">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h2>Explore Amazing Bible Stories!</h2>
+    <p>Discover timeless tales of faith, courage, and God's love</p>
+  </section>
+
+  <section class="stories-container">
+    
+    <!-- Filter buttons -->
+    <div class="filter-section">
+      <h3>Filter by Category:</h3>
+      <button class="filter-btn active" data-category="all">All Stories</button>
+      <button class="filter-btn" data-category="old-testament">Old Testament</button>
+      <button class="filter-btn" data-category="new-testament">New Testament</button>
+      <button class="filter-btn" data-category="miracles">Miracles</button>
+    </div>
+
+    <!-- Stories grid -->
+    <div class="stories-grid">
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/noah-and-the-ark-img.jpg" alt="Noah's Ark">
+        <div class="story-content">
+          <h3>Noah's Ark</h3>
+          <p>Learn how Noah followed God's instructions to build an ark and save the animals from the great flood.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/jonah-and-the-whale-img.jpg" alt="Jonah & The Whale">
+        <div class="story-content">
+          <h3>Jonah & The Whale</h3>
+          <p>The exciting story of Jonah's journey inside a whale and God's amazing forgiveness.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/david-and-goliath.jpg" alt="David & Goliath">
+        <div class="story-content">
+          <h3>David & Goliath</h3>
+          <p>See how young David defeated the giant Goliath with God's strength and five smooth stones!</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/adam-and-eve.png" alt="Adam & Eve">
+        <div class="story-content">
+          <h3>Adam & Eve</h3>
+          <p>The story of the first people God created and the beautiful Garden of Eden.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/moses.png" alt="Moses & the Red Sea">
+        <div class="story-content">
+          <h3>Moses & The Red Sea</h3>
+          <p>Discover how Moses parted the Red Sea to lead God's people to freedom.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="old-testament">
+        <img src="media/daniel-in-the-lion-den.png" alt="Daniel in the Lion's Den">
+        <div class="story-content">
+          <h3>Daniel & The Lions</h3>
+          <p>See how God protected Daniel when he was thrown into the lions' den.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament">
+        <img src="media/birth-of-Jesus.png" alt="Birth of Jesus">
+        <div class="story-content">
+          <h3>The Birth of Jesus</h3>
+          <p>The wonderful story of how Jesus was born in Bethlehem on Christmas night.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament miracles">
+        <img src="media/feed-5000.png" alt="Feeding 5000">
+        <div class="story-content">
+          <h3>Feeding the 5000</h3>
+          <p>Jesus performs an amazing miracle with five loaves and two fish!</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament">
+        <img src="media/good-samaritan.png" alt="Good Samaritan">
+        <div class="story-content">
+          <h3>The Good Samaritan</h3>
+          <p>Learn about kindness and helping others from this important parable.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament">
+        <img src="media/prodigal-son.png" alt="Prodigal Son">
+        <div class="story-content">
+          <h3>The Prodigal Son</h3>
+          <p>A heartwarming story about forgiveness and a father's unconditional love.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament miracles">
+        <img src="media/jesus-walking-on-water.png" alt="Walking on Water">
+        <div class="story-content">
+          <h3>Jesus Walks on Water</h3>
+          <p>Witness the incredible moment when Jesus walked on water and calmed the storm.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+      <div class="story-card" data-category="new-testament">
+        <img src="media/zacchaeus.png" alt="Zacchaeus">
+        <div class="story-content">
+          <h3>Zacchaeus the Tax Collector</h3>
+          <p>The story of a small man who climbed a tree to see Jesus and changed his life.</p>
+          <button class="read-btn">Read Story</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bible Stories 4 Kids — Bringing Bible Adventures to Life!
+      <nav class="footer-nav">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+
+        <div class="social-media-icons">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  </footer>
+
+  <script src="stories.js"></script>
+  
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Bible Stories 4 Kids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>Bible Stories 4 Kids</h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+  </header>
+
+  <section class="page-hero">
+    <h2>Get in Touch!</h2>
+    <p>We'd love to hear from you and your family</p>
+  </section>
+
+  <section class="contact-container">
+    
+    <!-- Contact Form -->
+    <div class="contact-form-section">
+      <h2>📧 Send Us a Message</h2>
+      <p class="form-description">Have questions, feedback, or prayer requests? Fill out the form below!</p>
+
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Your Name *</label>
+          <input type="text" id="name" name="name" required placeholder="Enter your name">
+          <span class="error-message" id="name-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          <span class="error-message" id="email-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="age">Child's Age (optional)</label>
+          <select id="age" name="age">
+            <option value="">Select age range</option>
+            <option value="3-5">3-5 years old</option>
+            <option value="6-8">6-8 years old</option>
+            <option value="9-12">9-12 years old</option>
+            <option value="parent">Parent/Guardian</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <select id="subject" name="subject" required>
+            <option value="">Choose a topic</option>
+            <option value="feedback">General Feedback</option>
+            <option value="question">Question</option>
+            <option value="prayer">Prayer Request</option>
+            <option value="suggestion">Story Suggestion</option>
+            <option value="technical">Technical Issue</option>
+            <option value="other">Other</option>
+          </select>
+          <span class="error-message" id="subject-error"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="6" required placeholder="Write your message here..."></textarea>
+          <span class="error-message" id="message-error"></span>
+          <div class="character-count">
+            <span id="char-count">0</span>/500 characters
+          </div>
+        </div>
+
+        <div class="form-group checkbox-group">
+          <label class="checkbox-label">
+            <input type="checkbox" id="newsletter" name="newsletter">
+            <span>📬 Subscribe to our newsletter for new stories and updates!</span>
+          </label>
+        </div>
+
+        <button type="submit" class="submit-btn">
+          <span class="btn-text">Send Message</span>
+          <span class="btn-icon">✉️</span>
+        </button>
+      </form>
+
+      <div id="form-response" class="form-response hidden"></div>
+    </div>
+
+    <!-- Contact Info Sidebar -->
+    <div class="contact-info-section">
+      
+      <div class="info-card">
+        <div class="info-icon">📧</div>
+        <h3>Email Us</h3>
+        <p>contact@biblestories4kids.com</p>
+        <p class="info-note">We respond within 24-48 hours!</p>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">🌐</div>
+        <h3>Follow Us</h3>
+        <div class="social-links">
+          <a href="#" class="social-btn facebook">Facebook</a>
+          <a href="#" class="social-btn instagram">Instagram</a>
+          <a href="#" class="social-btn youtube">YouTube</a>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">⏰</div>
+        <h3>Response Time</h3>
+        <p>Monday - Friday: 24 hours</p>
+        <p>Weekends: 48 hours</p>
+      </div>
+
+      <div class="info-card highlight">
+        <div class="info-icon">🙏</div>
+        <h3>Prayer Requests</h3>
+        <p>We pray for every request we receive. Your family is in our hearts!</p>
+      </div>
+
+      <div class="fun-fact-card">
+        <h3>✨ Did You Know?</h3>
+        <p id="fun-fact">Loading fun fact...</p>
+        <button id="new-fact-btn" class="fact-btn">New Fact</button>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq-section">
+    <h2>❓ Frequently Asked Questions</h2>
+    
+    <div class="faq-container">
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Is Bible Stories 4 Kids free to use?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! All our stories, games, and activities are completely free. We want every child to learn about God's love!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>What age group is this website for?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Our content is designed for children ages 3-12, but kids of all ages can enjoy the stories and games!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Can I suggest a Bible story?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Absolutely! Use the contact form above and select "Story Suggestion" to let us know which stories you'd like to see!</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>Do you have a mobile app?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Not yet, but we're working on it! Our website works great on phones and tablets in the meantime.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          <span>How can I support your ministry?</span>
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Share our website with other families, pray for our team, and send us your feedback. Your encouragement means the world to us!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bible Stories 4 Kids — Bringing Bible Adventures to Life!
+      <nav class="footer-nav">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+
+        <div class="social-media-icons">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  </footer>
+
+  <script src="contact.js"></script>
+  
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bible Stories 4 Kids</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="final-project-draft.css">
+  
+  <!-- Font Awesome for social media icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Header -->
+  <header>
+    <h1>Bible Stories 4 Kids</h1>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <nav id="nav-menu">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Welcome Banner Section -->
+  <section class="welcome-banner">
+    <h2>Welcome, Little Believers!</h2>
+    <p>Explore Bible stories in a fun, colourful, and exciting way!</p>
+    <a href="#stories-preview" class="explore-btn">Start Exploring</a>
+  </section>
+
+  <!-- Featured Stories Preview -->
+  <section id="stories-preview" class="stories-preview">
+    <h2 class="section-title">Featured Stories</h2>
+    <div class="story-grid">
+
+      <!-- Noah's Ark Story Card -->
+      <div class="story-card">
+        <img src="media/noah-and-the-ark.gif" alt="Noah's Ark">
+        <h3>Noah's Ark</h3>
+        <p>Learn how Noah followed God's instructions to save the animals.</p>
+      </div>
+
+      <!-- Jonah and the Whale Story Card -->
+      <div class="story-card">
+        <img src="media/jonah-and-the-whale.gif" alt="Jonah & The Whale">
+        <h3>Jonah & The Whale</h3>
+        <p>The exciting story of Jonah's journey and God's forgiveness.</p>
+      </div>
+
+      <!-- David and Goliath Story Card -->
+      <div class="story-card">
+        <img src="media/david-and-goliath.gif" alt="David & Goliath">
+        <h3>David & Goliath</h3>
+        <p>See how young David defeated the giant with God's strength!</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 Bible Stories 4 Kids — Bringing Bible Adventures to Life!
+      <nav class="footer-nav">
+      <a href="final-project-draft.html">Home</a>
+      <a href="stories.html">Stories</a>
+      <a href="characters.html">Characters</a>
+      <a href="games.html">Games</a>
+      <a href="contact.html">Contact</a>
+      </nav>
+
+        <div class="social-media-icons">
+        <a id="facebook" href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a>
+        <a id="instagram" href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a>
+        <a id="youtube" href="https://www.youtube.com"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+  </footer>
+
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('nav-menu');
+
+    hamburger.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+
+    // Close menu when clicking on a link
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+      });
+    });
+
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!hamburger.contains(e.target) && !navMenu.contains(e.target)) {
+        navMenu.classList.remove('active');
+      }
+    });
+  </script>
+
+</body>
+</html>
