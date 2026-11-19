@@ -1,76 +1,100 @@
 # Bible Stories 4 Kids
 
-A colorful, interactive website designed to help children learn Bible stories in a fun and engaging way!
+An interactive, educational website designed to make learning Bible stories fun and engaging for children.
+
+Built as a final academic web development project using HTML, CSS, and JavaScript.
+
+## About the Project
+
+Bible Stories 4 Kids introduces children to biblical stories, characters, and lessons through an engaging, child-friendly interface.
+
+The website combines educational content with interactive activities, allowing children to explore Bible stories, discover important characters, and test their knowledge through games.
 
 ## Features
 
-- **Stories Page** - Browse and filter Bible stories by category (Old Testament, New Testament, Miracles)
-- **Characters Page** - Meet amazing Bible characters with detailed profiles and filtering by type (Prophets, Kings, Disciples, Heroes)
-- **Interactive Games** - Three fun games to learn while playing:
-  - **Guess the Character** - Read clues and guess which Bible character they're about
-  - **Bible Puzzle** - Solve Bible-themed puzzles
-  - **Bible Quiz** - Test your Bible knowledge with exciting questions
-- **Contact Page** - Send messages, feedback, and prayer requests
-- **Responsive Design** - Works great on all devices with a mobile-friendly hamburger menu
+### Bible Stories
+- Browse stories from the Old and New Testaments.
+- Filter stories by categories, including Miracles.
+- Explore educational Bible content through an organized interface.
 
-## 📁 Project Structure
+### Bible Characters
+- Discover Bible characters and their profiles.
+- Filter characters by categories such as Prophets, Kings, Disciples, and Heroes.
 
-```
-Bible Stories 4 Kids/
-├── final-project-draft.html    # Home/Landing page
-├── final-project-draft.css     # Home page styling
-├── stories.html                # Bible stories collection
-├── stories.css                 # Stories page styling
-├── stories.js                  # Stories page functionality
-├── characters.html             # Bible characters directory
-├── characters.css              # Characters page styling
-├── characters.js               # Characters page functionality
-├── games.html                  # Interactive games
-├── games.css                   # Games page styling
-├── games.js                    # Games page functionality
-├── contact.html                # Contact form
-├── contact.css                 # Contact page styling
-├── contact.js                  # Contact form functionality
-├── media/                      # Images and media files
-└── README.md                   # This file
-```
+### Interactive Bible Games
+- **Guess the Character:** Identify Bible characters using clues.
+- **Bible Puzzle:** Solve Bible-themed puzzles.
+- **Bible Quiz:** Answer questions to test biblical knowledge.
+
+### Additional Features
+- Responsive layouts for different screen sizes.
+- Mobile-friendly hamburger navigation.
+- Interactive search and filtering functionality.
+- Contact page with a feedback and prayer request form interface.
 
 ## Technologies Used
 
-- **HTML5** - Semantic markup for web pages
-- **CSS3** - Styling with responsive design
-- **JavaScript** - Interactive features and game logic
-- **Google Fonts** - Custom typography (Fredoka One, Poppins)
-- **Font Awesome** - Social media icons and UI icons
-- **Font Awesome Icons** - External CDN for scalable icons
+- **HTML5:** Website structure and semantic markup.
+- **CSS3:** Styling, layouts, and responsive design.
+- **JavaScript:** Interactive games, filtering, and website functionality.
+- **Google Fonts:** Typography using Fredoka One and Poppins.
+- **Font Awesome:** Icons and interface elements.
 
-## How to Use
+## Project Structure
 
-1. **Open the Website**
-   - Open `final-project-draft.html` in your web browser
-   - Or open any page directly in your browser
+```text
+Bible Stories 4 Kids/
+├── final-project-draft.html
+├── final-project-draft.css
+├── stories.html
+├── stories.css
+├── stories.js
+├── characters.html
+├── characters.css
+├── characters.js
+├── games.html
+├── games.css
+├── games.js
+├── contact.html
+├── contact.css
+├── contact.js
+├── media/
+└── README.md
+```
 
-2. **Navigate the Site**
-   - Use the navigation menu at the top to explore different sections
-   - On mobile devices, click the hamburger menu icon (☰) to expand the menu
+## Getting Started
 
-3. **Explore Content**
-   - Visit the Stories page to read Bible stories
-   - Browse the Characters page to learn about Bible figures
-   - Try the Games page for fun learning activities
-   - Use the Contact page to send messages or feedback
+1. Clone or download the repository.
+2. Open the project folder.
+3. Open `final-project-draft.html` in your web browser.
+4. Navigate through the website and explore its features.
 
-## Highlights
+No installation or build process is required for the static website.
 
-- **Kid-Friendly Design** - Bright, engaging colors and easy-to-read fonts
-- **Interactive Elements** - Games, search functionality, and filters
-- **Fully Responsive** - Looks great on desktop, tablet, and mobile devices
-- **Educational** - Learn Bible stories and characters in an engaging format
+## Project Status
 
-## Contact
+**Academic project — ongoing improvements**
 
-Have feedback or questions? Visit the Contact page to get in touch!
+This website was originally developed as a final class project. I am continuing to review the code, improve the user experience, and strengthen its functionality as I develop my web development skills.
+
+## Future Improvements
+
+- Review and refactor JavaScript functionality.
+- Improve accessibility and mobile responsiveness.
+- Enhance the interactive games and user experience.
+- Test and refine existing website features.
+- Publish a live demonstration through GitHub Pages.
+
+## What I Learned
+
+This project provided practical experience in:
+
+- Structuring a multi-page website with HTML.
+- Styling web pages using CSS.
+- Incorporating JavaScript into interactive website features.
+- Organizing project files and assets.
+- Developing a website around a specific audience and educational purpose.
 
 ---
 
-**Created as a final HTML/CSS/JavaScript class project** 
+Created as a final academic web development project using HTML, CSS, and JavaScript.
